@@ -1,0 +1,31 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    node: true
+  },
+  extends: [
+    'standard-jsx',
+    'standard-with-typescript',
+    'standard-react',
+    'plugin:prettier/recommended'
+  ],
+
+  settings: {
+    react: {
+      version: '18.2'
+    }
+  },
+
+  overrides: [],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['tsconfig.json']
+  },
+  plugins: ['react', '@typescript-eslint', 'prettier'],
+  rules: {
+    'prettier/prettier': 'warn'
+  }
+}
