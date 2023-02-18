@@ -6,7 +6,7 @@
   "prettier": "prettier-config-standard",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "pnpm exec eslint --fix ",
-    "*.json": "pnpm exec prettier --write"
+    "*.{json,md}": "pnpm exec prettier --write"
   },
   "scripts": {
     "prepare": "husky install",
